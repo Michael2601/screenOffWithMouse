@@ -1,8 +1,13 @@
 # For run the programm 
 1. Configured by notepad your device path in test.ps1
     * See in device manager => device => properties => Details => Device instance path
-2. Open bat file as administrator
-3. Enter any character when screen On
+2. Open powershell as administrator and enter next code 
+```bash
+Set-ExecutionPolicy RemoteSigned 
+``` 
+3. Press A
+4. Open bat file as administrator
+5. Enter any character when screen On
 ## Congratulations!!
 
 # For Ease
@@ -27,9 +32,9 @@
 2. Select "Change icon" in Shortcut tab
 3. Select Empty icon => OK => Apply => OK
 4. Try to rename file => clear all => type alt + 255 => Enter
-5. If you want to remove arrow of shortcut => https://remontka.pro/ubrat-strelki-yarlykov/
+5. [If you want to remove arrow of shortcut](https://remontka.pro/ubrat-strelki-yarlykov/)
 6. Hide items
-## Congratulations!! Now you secured
+## Congratulations!! Now you MORE secured
  
 # If screen locked when you run script
 1. Open task manager as administrator
