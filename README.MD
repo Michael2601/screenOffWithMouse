@@ -7,7 +7,8 @@ Set-ExecutionPolicy RemoteSigned
 ``` 
 3. Press A
 4. Open bat file as administrator
-5. Enter any character when screen On
+5. For break process of script press q
+6. Enter any character when screen On
 ## Congratulations!!
 
 # For Ease
