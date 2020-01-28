@@ -1,14 +1,9 @@
 # For run the programm 
 1. Configured by notepad your device path in test.ps1
     * See in device manager => device => properties => Details => Device instance path
-2. Open powershell as administrator and enter next code 
-```bash
-Set-ExecutionPolicy RemoteSigned 
-``` 
-3. Press A
-4. Open bat file as administrator
-5. For break process of script press q
-6. Enter any character when screen On
+2. Open bat file as administrator
+3. For break process of script press 'q'
+4. Enter any character when screen On
 ## Congratulations!!
 
 # For Ease
