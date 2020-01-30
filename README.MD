@@ -1,9 +1,7 @@
 # For run the programm 
-1. Configured by notepad your device path in test.ps1
-    * See in device manager => device => properties => Details => Device instance path
-2. Open bat file as administrator
-3. For break process of script press 'q'
-4. Enter any character when screen On
+1. Open bat file as administrator
+2. For break process of script press 'q'
+3. Enter any character when screen On
 ## Congratulations!!
 
 # For Ease

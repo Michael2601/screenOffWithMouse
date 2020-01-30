@@ -1,7 +1,7 @@
 ﻿Add-Type -AssemblyName System.Windows.Forms
 
 $sleepTimeInSeconds = 1
-$devicePath = "HID\VID_046D&PID_C077\7&194B0A87&0&0000"
+$MouseConnected = Get-WmiObject Win32_USBControllerDevice | %{[wmi]$_.dependent} | ?{$_.pnpclass -eq 'Mouse'}
 
 function pressAlt([int]$sleep){     
 	while($true)
@@ -14,8 +14,8 @@ function pressAlt([int]$sleep){
         }
 }
 
-Disable-PnpDevice -InstanceId $devicePath -confirm:$false
+$MouseConnected | Disable-PnpDevice -confirm:$false
 scrnsave.scr
 [System.Windows.Forms.SendKeys]::SendWait("%")  
 pressAlt $sleepTimeInSeconds
-Enable-PnpDevice -InstanceId $devicePath -confirm:$false
+$MouseConnected | Enable-PnpDevice -confirm:$false
