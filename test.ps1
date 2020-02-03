@@ -6,7 +6,6 @@ $MouseConnected = Get-WmiObject Win32_USBControllerDevice | %{[wmi]$_.dependent}
 function pressAlt([int]$sleep){     
 	while($true)
         {
-        Write-Host "Press Q to exit"  
         $Q=$HOST.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 		sleep -Seconds $sleep
 		[System.Windows.Forms.SendKeys]::SendWait("%")   
